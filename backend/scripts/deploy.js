@@ -10,7 +10,7 @@ async function main() {
   const [owner] = await hre.ethers.getSigners();
 
   // Get contract that we want to deploy
-  const contractFactory = await hre.ethers.getContractFactory("Carbon");
+  const contractFactory = await hre.ethers.getContractFactory("CarbonNFT");
 
   // Deploy contract with the correct constructor arguments
   const contract = await contractFactory.deploy();
