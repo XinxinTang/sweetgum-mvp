@@ -11,9 +11,6 @@ export default function Home() {
       <Layout>
         {isAuthenticated ? (
           <div>
-            <h2 onClick={logout} className="cursor-pointer">
-              Logout
-            </h2>
             <Games />
           </div>
         ) : (
